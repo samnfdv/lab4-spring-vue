@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3038282-9a29-4aab-ae54-bb73ead8ac1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/GlobalExeptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/dto/PointDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/repository/PointRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/PointSevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/LoginView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/MainView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f3038282-9a29-4aab-ae54-bb73ead8ac1e" name="Changes" comment="files arhetektur">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/ResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/repository/PointRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/repository/ResultRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/PointSevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +41,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -61,6 +57,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
@@ -76,8 +74,18 @@
     "project.structure.side.proportion": "0.16138327",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.ifmo.backend.entity" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="backend" />
@@ -104,11 +112,32 @@
       <option name="presentableId" value="Default" />
       <updated>1770552492327</updated>
       <workItem from="1770552493322" duration="7784000" />
-      <workItem from="1770628156969" duration="6109000" />
+      <workItem from="1770628156969" duration="19363000" />
     </task>
+    <task id="LOCAL-00001" summary="files arhetektur">
+      <option name="closed" value="true" />
+      <created>1770717625971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770717625971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="files arhetektur">
+      <option name="closed" value="true" />
+      <created>1770717632939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770717632939</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="files arhetektur" />
+    <option name="LAST_COMMIT_MESSAGE" value="files arhetektur" />
   </component>
 </project>
