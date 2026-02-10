@@ -1,6 +1,6 @@
 package ru.ifmo.backend.entity.dto;
 
-import jakarta.validation.constraints.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,15 +8,16 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PointDto {
+public class ResultDto {
 
-    @NotNull
     private int x;
 
-    @NotNull
     private double y;
 
-    @NotNull
     private int r;
-}
 
+    private boolean success;
+
+    private String time;
+
+}

@@ -4,32 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3038282-9a29-4aab-ae54-bb73ead8ac1e" name="Changes" comment="files arhetektur">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/ResultService.java" afterDir="false" />
+    <list default="true" id="f55343ca-d6ab-4382-9662-c67f48929cb4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/dto/ResultDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40a2c59d-0b52-4a54-9f3a-282e47b82b61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40a2c59d-0b52-4a54-9f3a-282e47b82b61/storage_v2/_src_/database/lab4-spring-vue.DCsl2Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40a2c59d-0b52-4a54-9f3a-282e47b82b61/storage_v2/_src_/database/lab4-spring-vue.DCsl2Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/repository/PointRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/repository/ResultRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/PointSevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/dto/PointDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/entity/dto/PointDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/service/ResultService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,34 +42,32 @@
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="39O1qPe2YPdEUFm7kBWE7Jv0RJZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="39U4SZDaW5FyZuI6zbFak3jWpn9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/semennefedov/Desktop/Proga_2sem/lab4-spring-vue",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/semennefedov/Library/Application Support/JetBrains/IntelliJIdea2024.2/node/versions/20.15.0/bin/node",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16138327",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -81,11 +76,6 @@
     ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.ifmo.backend.entity" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="backend" />
@@ -106,38 +96,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3038282-9a29-4aab-ae54-bb73ead8ac1e" name="Changes" comment="" />
-      <created>1770552492327</created>
+      <changelist id="f55343ca-d6ab-4382-9662-c67f48929cb4" name="Changes" comment="" />
+      <created>1770737315858</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1770552492327</updated>
-      <workItem from="1770552493322" duration="7784000" />
-      <workItem from="1770628156969" duration="19363000" />
+      <updated>1770737315858</updated>
+      <workItem from="1770737317063" duration="6141000" />
     </task>
-    <task id="LOCAL-00001" summary="files arhetektur">
-      <option name="closed" value="true" />
-      <created>1770717625971</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1770717625971</updated>
-    </task>
-    <task id="LOCAL-00002" summary="files arhetektur">
-      <option name="closed" value="true" />
-      <created>1770717632939</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1770717632939</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="files arhetektur" />
-    <option name="LAST_COMMIT_MESSAGE" value="files arhetektur" />
   </component>
 </project>

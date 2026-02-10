@@ -1,12 +1,13 @@
 package ru.ifmo.backend.service;
 
 
-import lombok.Setter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import ru.ifmo.backend.entity.Point;
 import ru.ifmo.backend.entity.Result;
+import ru.ifmo.backend.entity.dto.PointDto;
+import ru.ifmo.backend.entity.dto.ResultDto;
 import ru.ifmo.backend.repository.ResultRepository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,20 +29,35 @@ public class ResultService {
     }
 
     @Transactional
-    public List<Result> getAllResults() {
-        return  resultRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
+    public List<ResultDto> getAllResults() {
+        return  resultRepository.findAll(Sort.by(Sort.Direction.ASC, "id"))
+                .stream()
+                .map(r -> new ResultDto(r.getX(),r.getY(),r.getR(),r.getSuccess(),r.getTime())).toList();
     }
 
     @Transactional
-    public void add(Point point) {
+    public void add(PointDto point) {
         String time = formatter.format(ZonedDateTime.now(ZoneId.of("Europe/Moscow")));
         Result result = Result.builder()
                 .x(point.getX())
                 .y(point.getY())
                 .r(point.getR())
                 .time(time)
-                .success(point.isSuccess())
+                .success(checkHit(point.getX(), point.getY(), point.getR()))
                 .build();
         resultRepository.save(result);
+    }
+
+    private Boolean checkHit(int x, double y,  int r) {
+
+        if (x <= 0 && x >= -r && y >= 0 && y <= r / 2.0) return true;
+
+
+        if (x <= 0 && y <= 0 && (x + y >= -r)) return true;
+
+
+       if (x >= 0 && y <= 0 && (x * x + y * y <= r * r)) return true;
+
+       return false;
     }
 }

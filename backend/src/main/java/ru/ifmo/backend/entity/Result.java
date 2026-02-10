@@ -6,7 +6,7 @@ import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.time.ZonedDateTime;
+
 
 
 
@@ -38,7 +38,5 @@ public class Result implements Serializable {
     @NotNull
     private String time;
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_id", nullable = false)
-//    private User owner;
+
 }

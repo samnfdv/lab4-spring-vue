@@ -3,7 +3,8 @@ package ru.ifmo.backend.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.ifmo.backend.entity.Result;
+import ru.ifmo.backend.entity.dto.PointDto;
+import ru.ifmo.backend.entity.dto.ResultDto;
 import ru.ifmo.backend.service.ResultService;
 
 import java.util.List;
@@ -19,8 +20,15 @@ public class CommonController {
         this.resultService = resultService;
     }
 
-    @GetMapping
-    public ResponseEntity<List<Result>> getAllResults(){
+    @GetMapping("/allResults")
+    public ResponseEntity<List<ResultDto>> getAllResults(){
+        return ResponseEntity.ok(resultService.getAllResults());
+    }
+
+    @GetMapping("/add")
+    public ResponseEntity<List<ResultDto>> addResult(@RequestParam int x, @RequestParam int y, @RequestParam int r) {
+        PointDto pointDto = new PointDto(x, y, r);
+        resultService.add(pointDto);
         return ResponseEntity.ok(resultService.getAllResults());
     }
 }
