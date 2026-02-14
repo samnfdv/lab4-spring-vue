@@ -1,4 +1,4 @@
-package ru.ifmo.backend.entity;
+package ru.ifmo.backend.model.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -17,8 +17,10 @@ import java.io.Serializable;
 @Table(name = "results")
 @Data
 public class Result implements Serializable {
+
     @Serial
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,6 +39,9 @@ public class Result implements Serializable {
 
     @NotNull
     private String time;
-
+    @NotNull
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
 }

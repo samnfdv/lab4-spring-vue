@@ -1,4 +1,4 @@
-package ru.ifmo.backend.entity.dto;
+package ru.ifmo.backend.model.entity.dto;
 
 
 import lombok.AllArgsConstructor;

@@ -1,14 +1,13 @@
-package ru.ifmo.backend.service;
+package ru.ifmo.backend.model.service;
 
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import ru.ifmo.backend.entity.Result;
-import ru.ifmo.backend.entity.dto.PointDto;
-import ru.ifmo.backend.entity.dto.ResultDto;
-import ru.ifmo.backend.repository.ResultRepository;
+import ru.ifmo.backend.model.entity.Result;
+import ru.ifmo.backend.model.entity.dto.PointDto;
+import ru.ifmo.backend.model.entity.dto.ResultDto;
+import ru.ifmo.backend.model.repository.ResultRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.ZoneId;
@@ -29,8 +28,8 @@ public class ResultService {
     }
 
     @Transactional
-    public List<ResultDto> getAllResults() {
-        return  resultRepository.findAll(Sort.by(Sort.Direction.ASC, "id"))
+    public List<ResultDto> getAllResults(String username) {
+        return  resultRepository.findAllByUserName( username)
                 .stream()
                 .map(r -> new ResultDto(r.getX(),r.getY(),r.getR(),r.getSuccess(),r.getTime())).toList();
     }
@@ -48,6 +47,7 @@ public class ResultService {
                 .r(point.getR())
                 .time(time)
                 .success(checkHit(point.getX(), point.getY(), point.getR()))
+                .user(point.getUser())
                 .build();
         resultRepository.save(result);
     }

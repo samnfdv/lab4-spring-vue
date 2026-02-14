@@ -1,9 +1,10 @@
-package ru.ifmo.backend.entity.dto;
+package ru.ifmo.backend.model.entity.dto;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ru.ifmo.backend.model.entity.User;
 
 @Data
 @NoArgsConstructor
@@ -18,5 +19,8 @@ public class PointDto {
 
     @NotNull
     private int r;
+
+    @NotNull
+    private User user;
 }
 
