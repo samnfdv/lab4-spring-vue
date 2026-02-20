@@ -1,12 +1,12 @@
 <script setup>
 import {ref} from 'vue'
-import {useAuthStore} from '@/stores/auth' // Импорт нашего мозга
-import {useRouter} from 'vue-router'       // Импорт навигации
+import {useAuthStore} from '@/stores/auth'
+import {useRouter} from 'vue-router'
 import ClockWidget from './Time.vue'
 const authStore = useAuthStore()
 const router = useRouter()
 
-// Реактивные переменные для формы
+
 const username = ref('')
 const password = ref('')
 const errorMessage = ref('')
@@ -18,15 +18,14 @@ async function passwordError() {
   throw new Error('Введенные пароли не совпадают');
 }
 
-// Функция отправки формы
+
 const handleSubmit = async () => {
-  // Сброс ошибок
+
   errorMessage.value = ''
   isLoading.value = true
 
   try {
-    // 1. Вызываем действие из Store (Шаг 3)
-    // await нужен, потому что запрос на сервер идет время
+
     if (isLogin.value) {
 
       await authStore.login({
@@ -42,12 +41,10 @@ const handleSubmit = async () => {
       }else{await passwordError() }
     }
 
-    // 2. Если ошибки не вылетело — значит вошли успешно.
-    // Перенаправляем пользователя внутрь системы.
+
     await router.push('/dashboard')
 
   } catch (error) {
-    // 3. Если API вернул 401 или другую ошибку
     if (isLogin.value){
     errorMessage.value = 'Неверный логин или пароль'}
     else {errorMessage.value=error.message}
@@ -82,7 +79,7 @@ const handleSubmit = async () => {
       </div>
 
       <transition name="fade">
-      <!-- Показываем ошибку, если есть -->
+
       <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
       </transition>
 

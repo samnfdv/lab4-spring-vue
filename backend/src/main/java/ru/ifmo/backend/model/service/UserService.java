@@ -5,7 +5,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.ifmo.backend.model.entity.User;
-import ru.ifmo.backend.model.entity.dto.LoginRequest;
 import ru.ifmo.backend.model.repository.UserRepository;
 
 @Service

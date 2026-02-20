@@ -17,7 +17,7 @@ const logout = () => {
 <template>
   <div class="page">
 
-    <!-- Шапка -->
+
     <header class="page-header">
       <div class="header-left">
         <span class="student-info">Нефёдов Семён Александрович · Группа P3221 · Вариант 22</span>
@@ -28,10 +28,10 @@ const logout = () => {
       </div>
     </header>
 
-    <!-- Основное содержимое -->
+
     <main class="page-body">
 
-      <!-- Верхний блок: форма + график -->
+
       <section class="top-section">
         <div class="form-col">
           <PointsForm />
@@ -41,7 +41,7 @@ const logout = () => {
         </div>
       </section>
 
-      <!-- Нижний блок: таблица результатов -->
+
       <section class="table-section">
         <ResultsTable />
       </section>

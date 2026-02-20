@@ -1,4 +1,3 @@
-<!-- src/components/ClockWidget.vue -->
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 
@@ -13,7 +12,7 @@ onUnmounted(() => clearInterval(timer))
 const hours   = computed(() => String(now.value.getHours()).padStart(2, '0'))
 const minutes = computed(() => String(now.value.getMinutes()).padStart(2, '0'))
 
-// Дата без сокращений: "Пятница, 20 февраля"
+
 const dateStr = computed(() =>
     now.value.toLocaleDateString('ru-RU', {
       weekday: 'long',

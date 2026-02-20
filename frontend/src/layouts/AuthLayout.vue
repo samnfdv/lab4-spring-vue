@@ -1,5 +1,4 @@
 <script setup>
-import Header from "@/components/Header.vue";
 import Login from "@/components/loginAuth/Login.vue";
 </script>
 
