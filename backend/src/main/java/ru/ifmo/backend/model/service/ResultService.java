@@ -37,7 +37,7 @@ public class ResultService {
     @Transactional
     public void add(PointDto point) {
         String time = formatter.format(ZonedDateTime.now(ZoneId.of("Europe/Moscow")));
-        int x = point.getX();
+        double x = point.getX();
         double y = point.getY();
         int r = point.getR();
         if ((x > r*1.5 || x < -r*1.5) || (y > r*1.5 || y < -r*1.5)) throw new IllegalArgumentException("Недоступные координаты");
@@ -52,7 +52,7 @@ public class ResultService {
         resultRepository.save(result);
     }
 
-    private Boolean checkHit(int x, double y,  int r) {
+    private Boolean checkHit(double x, double y,  int r) {
         if (x <= 0 && x >= -r && y >= 0 && y <= r / 2.0) return true;
 
         if (x <= 0 && y <= 0 && (x + y >= -r)) return true;

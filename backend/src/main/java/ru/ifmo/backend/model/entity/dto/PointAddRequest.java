@@ -4,13 +4,12 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ru.ifmo.backend.model.entity.User;
+
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PointDto {
-
+public class PointAddRequest {
     @NotNull
     private double x;
 
@@ -20,7 +19,5 @@ public class PointDto {
     @NotNull
     private int r;
 
-    @NotNull
-    private User user;
 }
 

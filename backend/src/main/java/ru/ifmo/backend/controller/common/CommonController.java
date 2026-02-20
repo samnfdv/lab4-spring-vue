@@ -47,7 +47,7 @@ public class CommonController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateToken(loginRequest.getUsername());
 
-        return ResponseEntity.ok(new JwtResponse(jwt));
+        return ResponseEntity.ok(new JwtResponse(jwt,loginRequest.getUsername() ));
     }
 
 
@@ -59,7 +59,12 @@ public class CommonController {
         }
         User user = new User(regRequest.getUsername(), encoder.encode(regRequest.getPassword()));
         userService.save(user);
-        return ResponseEntity.ok("User registered successfully!");
+        Authentication authentication = authManager.authenticate(
+                new UsernamePasswordAuthenticationToken(regRequest.getUsername(), regRequest.getPassword()));
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        String jwt = jwtUtils.generateToken(regRequest.getUsername());
+        return ResponseEntity.ok(new JwtResponse(jwt, regRequest.getUsername()));
     }
 
 

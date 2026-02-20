@@ -10,4 +10,6 @@ import lombok.Data;
 public class JwtResponse {
     private String token;
     private final String type = "Bearer";
+    private final String user;
+
 }

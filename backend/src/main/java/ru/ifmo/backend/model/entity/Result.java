@@ -26,7 +26,7 @@ public class Result implements Serializable {
     private Long id;
 
     @NotNull
-    private Integer x;
+    private Double x;
 
     @NotNull
     private Double y;

@@ -3,6 +3,7 @@ package ru.ifmo.backend.controller.secured;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.ifmo.backend.model.entity.dto.PointAddRequest;
 import ru.ifmo.backend.model.entity.dto.PointDto;
 import ru.ifmo.backend.model.entity.dto.ResultDto;
 import ru.ifmo.backend.model.service.ResultService;
@@ -36,10 +37,9 @@ public class AuthController {
 
     @PostMapping("/addPoint")
     public ResponseEntity<List<ResultDto>> addResult(
-            @RequestParam int x,
-            @RequestParam int y,
-            @RequestParam int r, Principal principal) {
-        PointDto pointDto = new PointDto(x, y, r, userService.getCurrentUser());
+            @RequestBody PointAddRequest pointAddRequest
+            ,Principal principal) {
+        PointDto pointDto = new PointDto(pointAddRequest.getX(), pointAddRequest.getY(), pointAddRequest.getR(), userService.getCurrentUser());
         resultService.add(pointDto);
         String username = principal.getName();
         return ResponseEntity.ok(resultService.getAllResults(username));

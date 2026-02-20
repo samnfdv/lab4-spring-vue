@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResultDto {
 
-    private int x;
+    private double x;
 
     private double y;
 
