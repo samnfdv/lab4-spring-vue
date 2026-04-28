@@ -56,7 +56,7 @@ const logout = () => {
 
 .page {
   min-height: 100vh;
-  background: #CCE5FF; /* Наш голубой фон */
+  background: #CCE5FF;
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;

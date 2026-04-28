@@ -4,46 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55343ca-d6ab-4382-9662-c67f48929cb4" name="Changes" comment="security">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/PointAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/instance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/points.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/loginAuth/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/loginAuth/Time.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/secured/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/secured/Graph.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/secured/PointsForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/secured/ResultsTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/AuthLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/MainLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/stores/points.js" afterDir="false" />
+    <list default="true" id="f55343ca-d6ab-4382-9662-c67f48929cb4" name="Changes" comment="front">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/common/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/common/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/secured/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/controller/secured/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/PointDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/PointDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/ResultDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/entity/dto/ResultDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/service/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/ru/ifmo/backend/model/service/ResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/vue.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/MainView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,41 +40,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/semennefedov/Desktop/Proga_2sem/lab4-spring-vue",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16138327",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/semennefedov/Desktop/Proga_2sem/lab4-spring-vue&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16138327&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src" />
@@ -178,7 +140,8 @@
       <workItem from="1771233616214" duration="40000" />
       <workItem from="1771241053645" duration="4057000" />
       <workItem from="1771323640210" duration="1662000" />
-      <workItem from="1771340443285" duration="54307000" />
+      <workItem from="1771340443285" duration="61488000" />
+      <workItem from="1774989733576" duration="1428000" />
     </task>
     <task id="LOCAL-00001" summary="dtoшки">
       <option name="closed" value="true" />
@@ -204,7 +167,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771099919519</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="front">
+      <option name="closed" value="true" />
+      <created>1771602219155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771602219155</updated>
+    </task>
+    <task id="LOCAL-00005" summary="front">
+      <option name="closed" value="true" />
+      <created>1771603003532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1771603003532</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dtoшки" />
     <MESSAGE value="security" />
-    <option name="LAST_COMMIT_MESSAGE" value="security" />
+    <MESSAGE value="front" />
+    <option name="LAST_COMMIT_MESSAGE" value="front" />
   </component>
 </project>
